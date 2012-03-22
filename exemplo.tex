@@ -1,0 +1,92 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{graphicx}
+\bibliographystyle{plain}
+\topmargin 0 cm
+\hoffset -1 cm
+\voffset 0 cm
+\evensidemargin 0 cm
+\oddsidemargin 0 cm
+\setlength{\textwidth}{18 cm}
+\setlength{\textheight}{21 cm}
+
+\title{ Exemplo de arquivo .tex }
+\author{ Abel Siqueira }
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Seção}
+\subsection{Subseção}
+\subsubsection{Subsubseção}
+
+A quebra de linha
+no latex não quebra a linha
+no pdf.
+
+Dar um linha de espaço cria um parágrafo.
+
+Lista com bullets.
+\begin{itemize}
+ \item Item 1
+ \item Item 2
+ \begin {itemize}
+  \item Item 2.1
+  \item Item 2.2
+ \end{itemize}
+\end{itemize}
+
+Lista numerada
+\begin{enumerate}
+ \item Item 1
+ \item Item 2
+ \begin{itemize}
+  \item Item 2.1
+  \item Item 2.2
+ \end{itemize}
+\end{enumerate}
+
+Incluir figura
+\begin{flushleft}
+ Esquerda
+ \includegraphics[scale=0.25]{logo.png}
+ \includegraphics[scale=0.5]{logo.png}
+ \includegraphics[scale=1.0]{logo.png}
+ \includegraphics[scale=2.0]{logo.png}
+\end{flushleft}
+\begin{center}
+ Centro
+ \includegraphics[scale=0.25]{logo.png}
+ \includegraphics[scale=0.5]{logo.png}
+ \includegraphics[scale=1.0]{logo.png}
+ \includegraphics[scale=2.0]{logo.png}
+\end{center}
+\begin{flushright}
+ Direita
+ \includegraphics[scale=0.25]{logo.png}
+ \includegraphics[scale=0.5]{logo.png}
+ \includegraphics[scale=1.0]{logo.png}
+ \includegraphics[scale=2.0]{logo.png}
+\end{flushright}
+
+Alguns caracteres não podem ser usados no texto, como \verb+_+, \verb+\+, \verb+^+. Para usá-los, utilizamos o comando \verb-\verb+_+-, onde os + são delimitadores e tudo dentro é aceito sem formatação. Para textos existe o
+ambiente verbatim:
+\begin{verbatim}
+Aqui dentro
+  não existe
+    formatação
+_^~'"\
+\verb
+\end{verbatim}
+
+\end{document}
+

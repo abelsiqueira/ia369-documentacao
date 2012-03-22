@@ -3,3 +3,5 @@
 *.log
 *.tex.backup
 *.toc
+*.bbl
+*.blg
