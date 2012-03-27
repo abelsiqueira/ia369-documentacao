@@ -1,0 +1,73 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{graphicx}
+\bibliographystyle{plain}
+\topmargin 0 cm
+\hoffset -1 cm
+\voffset 0 cm
+\evensidemargin 0 cm
+\oddsidemargin 0 cm
+\setlength{\textwidth}{18 cm}
+\setlength{\textheight}{21 cm}
+
+\begin{document}
+
+\begin{enumerate}
+\item Acessar \verb+www.github.com+ para criar uma conta para poder utilizá-lo.
+\item Ir até ``Signup and Pricing''
+\item Clicar em ``Create a Free Account'', preencher os dados solicitados e criar a conta
+\item Fazer o download do programa de instalação do Git em 
+
+\verb+http://msysgit.googlecode.com/files/Git-1.7.9-review20120201.exe+
+\item Iniciar o aplicativo de instalação e prosseguir até a etapa ``Select Components''.
+\item Nesta etapa marcar as opções ``Git Bash Here'' e ``Git Gui Here'' e continuar a instalação
+com as opções default.
+\item Abrir o Git Bash.
+\item Configurar o nome digitando \verb+git config --global user.name "Seu Nome"+
+\item Configurar o email digitando \verb+git config --global user.email "Seu Email"+
+\item Acessar o repositório criado para a documentação 
+
+\verb+https://github.com/abelsiqueira/ia369-documentacao+ 
+e clicar em {\bf fork} para criar sua área no repositório para guardar seus
+arquivos
+\item Copiar o endereço https gerado para seu repositório
+\item No Git, digitar 
+\verb+git clone endereco_seu_repositório+: Uma pasta do seu repositório será
+criada nos documentos
+\item Para enviar um arquivo ao seu repositório, colocá-lo na pasta criada nos documentos
+referente a seu repositório e digitar no prompt 
+\verb+git add nome_arquivo+
+\item Para dar o commit nos arquivos digitar 
+\verb+git commit -am "Descrição do arquivo"+
+\item Para enviar o arquivo ao repositório, digitar 
+\verb+git push origin master+
+\item Para avisar o repositório central que existem mudanças no seu
+repositório, volte ao endereço do repositório central e clique em
+{\bf Pull Request}
+\item Para adicionar o repositório central digitar 
+
+{\small
+\verb+git remote add central https://github.com/abelsiqueira/ia369-documentacao.git+}
+\item Para pegar os arquivos desse diretório digitar no prompt 
+\verb+git fetch central+ e
+depois 
+\verb+git merge central/master+. Neste ponto o Git irá fazer o download de
+todos os arquivos que estiverem lá.
+\item Para fazer o envio de alguma alteração que for feita nos arquivos
+ usar o 
+\verb+git commit -am "Descrição das mudanças"+
+\item Para enviar as mudanças ao repositório, digitar 
+\verb+git push origin master+
+\item Para avisar o repositório central que existem mudanças no seu
+repositório, volte ao endereço do repositório central e clique em
+{\bf Pull Request}
+\end{enumerate}
+\end{document}
+
