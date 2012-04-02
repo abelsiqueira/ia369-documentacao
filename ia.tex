@@ -60,7 +60,7 @@ suficiente, ele voltará a circular.
 
 \subsection{Urso}
 
-O urso fica patrulando na floresta. Caso Medrash entre no raio de deteção
+O urso fica patrulhando na floresta. Caso Medrash entre no raio de deteção
 do urso, este o perseguirá. Para fugir do urso, Medrash deve ficar a uma
 distância bem maior que o raio de deteção.
 Se o urso se aproximar muito de Medrash, este será atacado. Enquanto estiver
@@ -68,4 +68,42 @@ próximo, o urso, periodicamente, irá se defender.
 
 \begin{center}
  \includegraphics[scale=0.5]{ia_urso.png}
+\end{center}
+
+\subsection{Lobo}
+
+O lobo fica patrulhando na montanha. Caso Medrash entre no raio de
+deteção do lobo enquanto estiver com a tocha acesa, o lobo fugirá. Caso
+Medrash entre no raio de deteção do lobo enquanto estiver com a tocha
+apagada, o lobo perseguirá Medrash. Em qualquer um desses casos, se
+Medrash ficar muito próximo do lobo, então o lobo atacará Medrash, e
+voltará à atividade anterior.
+Se, enquanto estiver sendo perseguido, Medrash acender a tocha,
+o lobo fugirá. Similarmente, se o lobo estiver fugindo e a tocha se apagar,
+o logo passará a perseguir Medrash.
+
+\begin{center}
+ \includegraphics[scale=0.5]{ia_lobo.png}
+\end{center}
+
+\subsection{Guerreiro}
+
+O guerreiro entra no campo de batalha já perseguindo Medrash. Caso
+Medrash esteja próximo do piromaníaco e dentro do raio de ataque do 
+guerreiro, então o guerreiro empurrará Medrash.
+Se Medrash não estiver muito próximo do piromaníaco, mas estiver dentro
+do raio de ataque do guerreiro, então o guerreiro atacará Medrash.
+
+\begin{center}
+ \includegraphics[scale=0.5]{ia_guerreiro.png}
+\end{center}
+
+\subsection{Piromaníaco}
+
+O piromaníaco entra no campo de batalha se deslocando ao local mais
+próximo para atear fogo. Seu único objetivo é atear fogo em todos os
+locais possíveis. Caso isso aconteça, o jogador perde o jogo.
+
+\begin{center}
+ \includegraphics[scale=0.5]{ia_piromaniaco.png}
 \end{center}
