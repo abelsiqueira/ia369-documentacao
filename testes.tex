@@ -1,1 +1,38 @@
 \section{Testes}
+Com o decorrer dos anos, aplicações de software robustas e complexas demandam cada vez mais esforços para que se mantenha sua qualidade. A engenharia de software é constituída por um grupo de métodos, ferramentas e critérios cujo objetivo recai sobre a tentativa de produzir aplicativos detentores desta qualidade. Dentre os processos propostos por ela, estão aqueles responsáveis por descrever as atividades de teste de software.
+   
+O teste de software refere-se a um processo de âmbito investigativo, ou seja, as ferramentas e métodos propostos  por ele têm por objetivo procurar e encontrar problemas presentes em  uma aplicação. Sendo verdade, pode-se dizer que trata-se de uma investigação a respeito da qualidade do aplicativo dentro do contexto ao qual ele deve operar. Segundo \cite{bib:testes_pressman} o objetivo central do teste é o de apontar a existência da maior quantidade possível de defeitos que  não foram identificados pelas revisões dentro dos limites de prazo e de custo.
+
+Diz-se que um caso de teste é bom quando apresenta grande probabilidade de revelar a presença de um defeito ainda não descoberto. Portanto, pode-se dizer que um teste é bem-sucedido quando aponta e verifica a presença de um defeito de maneira satisfatória (PRESSMAN, 1995). 
+ 
+Um ponto de vista errôneo geralmente extraído de um aplicativo disponibilizado para ser comercializado é de que ele deve funcionar corretamente, sem a presença de erros. A complexidade envolvida em sua codificação, somada aos profissionais presentes, torna impraticável a possibilidade de provar esta corretitude.
+ 
+As falhas de aplicativos podem ser geradas por uma grande gama de motivos, dentre os quais, especificações de requisitos erradas, implementações incorretas e plataformas de hardware não suportáveis. 
+
+No âmbito do teste de software há uma distinção clara entre os conceitos de defeito, erro e falha, cada qual com suas características e particularidades. Uma falha é uma condição anormal na saída que era esperada por um componente do software, ou seja, algo que é visível ao usuário. O defeito é algo causador da falha e, portanto, pode-se dizer que se caracteriza por ser algum problema com o código do software. Por fim, o erro é um estado inconsistente que se propaga pelo sistema após o exercício de um defeito. Sendo verdade, diz-se que o erro pode ou não acarretar em uma falha devido a fatores tais como redundância de processamento.
+
+Pressman (1995) discorre sobre a atividade de teste da seguinte maneira: “Se realmente fossemos bons para programar não haveria bugs. Se existem bugs, é porque somos ruins naquilo que fazemos e, se somos ruins nisso devemos sentir-nos culpados por isso. Assim, a atividade de teste e o projeto de casos de teste são 
+uma admissão de falha, o que promove uma boa dose de culpa. O tédio de testar é apenas uma punição por nossos erros”. 
+
+As principais considerações do teste de software são (PRESSMAN, 1995): 
+
+\begin{itemize}
+\item Para ser eficaz o teste deve ser cuidadosamente desenhado;
+\item Testes improvisados devem ser evitados;
+\item Resultados devem ser inspecionados e comparados com resultados esperados;
+\item Desenvolvedores não são as pessoas mais indicadas para testar seu próprio produto;
+\item Testadores independentes são importantes;
+\end{itemize}
+
+No que diz respeito às abordagens para o teste de software pode-se dizer que há três: teste de caixa branca, de caixa preta e caixa cinza.
+
+O teste caixa preta, do inglês \textit{Black Box}, ou teste funcional, caracteriza-se por não considerar o código fonte da aplicação ao efetuar os testes. Responsabiliza-se por determinar se os requisitos foram total ou parcialmente satisfeitos com a verificação dos resultados obtidos, deixando de lado o modo como ocorreu o processamento. Também demonstra quais são as funções do software que encontram-se operacionais, ou seja, aquelas que produzem a saída esperada. Dentre as principais técnicas que utilizam-se desta abordagem cita-se o particionamento de equivalência e a análise do valor limite.
+
+O teste caixa branca, do inglês \textit{White Box}, ou teste estrutural, de maneira oposta ao que ocorre com o caixa preta, considera o código da aplicação na aplicação das atividades de teste. Responsabiliza-se por determinar defeitos na estrutura interna do programa por meio do exercício dos caminhos de execução, com a execução de conjuntos específicos de condições ou laços. Dentre as principais técnicas
+ que utilizam-se desta abordagem cita-se o teste de caminho básico, o qual utiliza um grafo de programa para denotar as instruções presentes no código fonte.
+
+O teste caixa cinza, do inglês \textit{Gray Box}, caracteriza-se por ser um híbrido entre os dois anteriormente descritos, caixa branca e preta, por apresentar elementos e características presentes em ambos.
+
+Para o jogo ``As Crônicas de Medrash'' a ser desenvolvido, testes funcionais serão realizados em detrimento dos estruturais. O jogo será testado de acordo com as especificações presentes no documento de \textit{Game Design}. Serão criado casos de testes para exercitar aspectos variados referentes ao jogo tais como fluxo das fases, inteligência artificial do inimigos e comportamentos do personagem principal.
+ 
+A criação e execução dos casos de testes deverá ser feita por pessoal especializado. A correção dos eventuais problemas encontrados será cargo do desenvolvedor responsável. Poderá também haver o re-teste no âmbito de se verificar se o problema foi realmente corrigido ou se não gerou novos com a solução aplicada.
