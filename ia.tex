@@ -1,99 +1,99 @@
-\section{Intelig√™ncia Artificial}
+\section{InteligÍncia Artificial}
 
 \subsection{Fase 1}
 
 \subsubsection{Cobra}
 
-A cobra rasteja aleatoriamente no cen√°rio. A partir do momento que
-Medrash entra no campo de dete√ß√£o da cobra, esta fica em posi√ß√£o
-de ataque. Se Medrash se aproximar ainda mais, ela o atacar√°.
-A √∫nica forma de Medrash evitar este ataque ser√° esquivando. O ataque
+A cobra rasteja aleatoriamente no cen·rio. A partir do momento que
+Medrash entra no campo de deteÁ„o da cobra, esta fica em posiÁ„o
+de ataque. Se Medrash se aproximar ainda mais, ela o atacar·.
+A ˙nica forma de Medrash evitar este ataque ser· se esquivando. O ataque
 ignora a defesa de Medrash.
-Uma vez que Medrash saia se afaste do campo de dete√ß√£o da cobra, ela
-voltar√° a patrulhar.
+Uma vez que Medrash se afaste do campo de deteÁ„o da cobra, ela
+voltar· a patrulhar.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:cobra}.
+A m·quina de estados pode ser vista na figura \ref{fsm:cobra}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.4]{ia_cobra.png}
- \caption{M√°quina de estado da Cobra}
+ \caption{M·quina de estado da Cobra}
  \label{fsm:cobra}
 \end{figure}
 
 \subsubsection{Enxame de abelhas}
 
-O enxame de abelhas fica aglomerado na colm√©ia. Quando Medrash se
-aproxima o suficiente da colm√©ia, o enxame come√ßa a persegu√≠-lo.
-A √∫nica op√ß√£o de Medrash √© fugir, pois as abelhas n√£o podem ser atacadas.
-Quando Medrash se afastar o suficiente da colm√©ia, o enxame deixa
-de persegu√≠-lo.
-Se o enxame se aproximar de Medrash, ir√° atac√°-lo.
+O enxame de abelhas fica aglomerado na colmÈia. Quando Medrash se
+aproxima o suficiente da colmÈia, o enxame comeÁa a perseguÌ-lo.
+A ˙nica opÁ„o de Medrash È fugir, pois as abelhas n„o podem ser atacadas.
+Quando Medrash se afastar o suficiente da colmÈia, o enxame deixa
+de perseguÌ-lo.
+Se o enxame se aproximar de Medrash, ir· atac·-lo.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:enxame}.
+A m·quina de estados pode ser vista na figura \ref{fsm:enxame}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.55]{ia_enxame.png}
- \caption{M√°quina de estado do Enxame}
+ \caption{M·quina de estado do Enxame}
  \label{fsm:enxame}
 \end{figure}
 
-\subsubsection{Jacar√©}
+\subsubsection{JacarÈ}
 
-O jacar√© fica nas proximidades do rio. Se Medrash se aproximar dele,
-este o perseguir√°. Se Medrash se afastar o suficiente dele, o jacar√© voltar√° √†s proximidades de seu ponto inicial.
-O jacar√© se movimenta dentro e fora do rio. Caso ele fique pr√≥ximo de
-Medrash, ir√° atac√°-lo. Se sua barra de vida estiver baixa, ele atacar√°
-m√∫ltiplas vezes.
+O jacarÈ fica no rio ou prÛximo deste. Se Medrash se aproximar do jacarÈ,
+este o perseguir·. Se Medrash se afastar o suficiente dele, o jacarÈ voltar· ‡s proximidades de seu ponto inicial.
+O jacarÈ se movimenta dentro e fora do rio. Caso ele fique prÛximo de
+Medrash, ir· atac·-lo. Se sua barra de vida estiver baixa, ele atacar·
+m˙ltiplas vezes.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:jacare}.
+A m·quina de estados pode ser vista na figura \ref{fsm:jacare}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.5]{ia_jacare.png}
- \caption{M√°quina de estado do Jacar√©}
+ \caption{M·quina de estado do JacarÈ}
  \label{fsm:jacare}
 \end{figure}
 
 \subsubsection{Urso}
 
-O urso fica patrulhando na floresta. Caso Medrash entre no raio de dete√ß√£o
-do urso, este o perseguir√°. Para fugir do urso, Medrash deve ficar a uma
-dist√¢ncia bem maior que o raio de dete√ß√£o.
-Se o urso se aproximar muito de Medrash, este ser√° atacado. Enquanto estiver
-pr√≥ximo, o urso, periodicamente, ir√° se defender.
+O urso fica patrulhando na floresta. Caso Medrash entre no raio de deteÁ„o
+do urso, este o perseguir·. Para fugir do urso, Medrash deve ficar a uma
+dist‚ncia bem maior que o raio de deteÁ„o.
+Se o urso se aproximar muito de Medrash, este ser· atacado. Enquanto estiver
+prÛximo, o urso, periodicamente, ir· se defender.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:urso}.
+A m·quina de estados pode ser vista na figura \ref{fsm:urso}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.5]{ia_urso.png}
- \caption{M√°quina de estado do Urso}
+ \caption{M·quina de estado do Urso}
  \label{fsm:urso}
 \end{figure}
 
 \subsubsection{Tigre (Chefe)}
 
-Sendo o chefe da primeira fase, o tigre segue uma estrat√©gia mais agressiva.
-Inicialmente, ele corre em volta de Medrash, mantendo-se √† uma dist√¢ncia
- segura. Ap√≥s algum tempo, ele correr√° em dire√ß√£o ao Medrash. Caso se
- aproxime, ele o atacar√°. Se Medrash conseguir se afastar por tempo
- suficiente, o tigre voltar√° a circular Medrash.
-Periodicamente o tigre andar√° devagar para recuperar sua energia. Nesse
-per√≠odo, o Medrash consegue alcan√ßa-lo, e atac√°-lo. Ao ser atacado, o tigre
+Sendo o chefe da primeira fase, o tigre segue uma estratÈgia mais agressiva.
+Inicialmente, ele corre em volta de Medrash, mantendo-se ‡ uma dist‚ncia
+ segura. ApÛs algum tempo, ele correr· em direÁ„o ao Medrash. Caso este se
+ aproxime, ele o atacar·. Se Medrash conseguir se afastar por tempo
+ suficiente, o tigre voltar· a circular Medrash.
+Periodicamente o tigre andar· devagar para recuperar sua energia. Nesse
+perÌodo, o Medrash consegue alcanÁa-lo, e atac·-lo. Ao ser atacado, o tigre
 volta a circular.
-Quando sua barra de vida estiver baixa, o tigre tamb√©m ir√° preparar um
-bote. Ele ficar√° esperando Medrash se aproximar. Caso Medrash se aproxime,
- ele atacar√° com um salto. Se Medrash permanecer afastado por tempo 
-suficiente, ele voltar√° a circular.
+Quando sua barra de vida estiver baixa, o tigre tambÈm ir· preparar um
+bote. Ele ficar· esperando Medrash se aproximar. Caso Medrash se aproxime,
+ ele atacar· com um salto. Se Medrash permanecer afastado por tempo 
+suficiente, ele voltar· a circular.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:tigre}.
+A m·quina de estados pode ser vista na figura \ref{fsm:tigre}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.4]{ia_tigre.png}
- \caption{M√°quina de estado do Tigre}
+ \caption{M·quina de estado do Tigre}
  \label{fsm:tigre}
 \end{figure}
 
@@ -102,113 +102,113 @@ A m√°quina de estados pode ser vista na figura \ref{fsm:tigre}.
 \subsubsection{Lobo}
 
 O lobo fica patrulhando na montanha. Caso Medrash entre no raio de
-dete√ß√£o do lobo enquanto estiver com a tocha acesa, o lobo fugir√°. Caso
-Medrash entre no raio de dete√ß√£o do lobo enquanto estiver com a tocha
-apagada, o lobo perseguir√° Medrash. Em qualquer um desses casos, se
-Medrash ficar muito pr√≥ximo do lobo, ent√£o o lobo atacar√° Medrash, e
-voltar√° √† atividade anterior.
-Se, enquanto estiver sendo perseguido, Medrash acender a tocha,
-o lobo fugir√°. Similarmente, se o lobo estiver fugindo e a tocha se apagar,
-o logo passar√° a perseguir Medrash.
+deteÁ„o do lobo enquanto estiver com a tocha acesa, o lobo fugir·. Caso
+Medrash entre no raio de deteÁ„o do lobo enquanto estiver com a tocha
+apagada, o lobo perseguir· Medrash. Em qualquer um desses casos, se
+Medrash ficar muito prÛximo do lobo, ent„o o lobo atacar· Medrash e
+voltar· ‡ atividade anterior.
+Se enquanto estiver sendo perseguido Medrash acender a tocha,
+o lobo fugir·. Similarmente, se o lobo estiver fugindo e a tocha se apagar,
+o lobo passar· a perseguir Medrash.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:lobo}.
+A m·quina de estados pode ser vista na figura \ref{fsm:lobo}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.5]{ia_lobo.png}
- \caption{M√°quina de estado do Lobo}
+ \caption{M·quina de estado do Lobo}
  \label{fsm:lobo}
 \end{figure}
 
 \subsubsection{Guerreiro}
 
-O guerreiro entra no campo de batalha j√° perseguindo Medrash. Caso
-Medrash esteja pr√≥ximo do piroman√≠aco e dentro do raio de ataque do 
-guerreiro, ent√£o o guerreiro empurrar√° Medrash.
-Se Medrash n√£o estiver muito pr√≥ximo do piroman√≠aco, mas estiver dentro
-do raio de ataque do guerreiro, ent√£o o guerreiro atacar√° Medrash.
+O guerreiro entra no campo de batalha j· perseguindo Medrash. Caso
+Medrash esteja prÛximo do piromanÌaco e dentro do raio de ataque do 
+guerreiro, ent„o o guerreiro empurrar· Medrash.
+Se Medrash n„o estiver muito prÛximo do piromanÌaco, mas estiver dentro
+do raio de ataque do guerreiro, ent„o o guerreiro atacar· Medrash.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:guerreiro}.
+A m·quina de estados pode ser vista na figura \ref{fsm:guerreiro}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.47]{ia_guerreiro.png}
- \caption{M√°quina de Estado do Guerreiro}
+ \caption{M·quina de Estado do Guerreiro}
  \label{fsm:guerreiro}
 \end{figure}
 
-\subsubsection{Piroman√≠aco}
+\subsubsection{PiromanÌaco}
 
-O piroman√≠aco entra no campo de batalha se deslocando ao local mais
-pr√≥ximo para atear fogo. Seu √∫nico objetivo √© atear fogo em todos os
-locais poss√≠veis. Caso isso aconte√ßa, o jogador perde o jogo.
+O piromanÌaco entra no campo de batalha se deslocando ao local mais
+prÛximo para atear fogo. Seu ˙nico objetivo È atear fogo em todos os
+locais possÌveis. Caso isso aconteÁa, o jogador perde o jogo.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:piromaniaco}.
+A m·quina de estados pode ser vista na figura \ref{fsm:piromaniaco}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.5]{ia_piromaniaco.png}
- \caption{M√°quina de Estado do Piroman√≠aco}
+ \caption{M·quina de Estado do PiromanÌaco}
  \label{fsm:piromaniaco}
 \end{figure}
 
 \subsection{Fase 3}
 
-\subsubsection{Fan√°tico}
+\subsubsection{Fan·tico}
 
-O fan√°tico ser√° instanciado conforme necess√°rio para atacar o Medrash.
-Ele j√° inicia perseguindo Medrash. Quando fica perto o suficiente, ele
-ataca Medrash. Se Medrash se afastar, ele volta a persegu√≠-lo.
+O fan·tico ser· instanciado conforme necess·rio para atacar Medrash.
+Ele j· inicia perseguindo Medrash. Quando fica perto o suficiente, ele
+ataca Medrash. Se Medrash se afastar, ele volta a perseguÌ-lo.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:fanatico}.
+A m·quina de estados pode ser vista na figura \ref{fsm:fanatico}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.35]{ia_fanatico.png}
- \caption{M√°quina de Estado do Fan√°tico}
+ \caption{M·quina de Estado do Fan·tico}
  \label{fsm:fanatico}
 \end{figure}
 
 \subsubsection{Balasar (Chefe)}
 
-O Balasar j√° inicia na batalha. Inicialmente ele prepara o ataque.
-Ap√≥s alguns segundos, ele investe em dire√ß√£o √† Medrash. Seu movimento
-√© essencialmente retil√≠neo. Durante o movimento, sua rota√ß√£o √© limitada.
-Se Balasar chegar a uma certa dist√¢ncia de Medrash durante a investida,
-ele deferir√° um ataque contra o mesmo. Medrash pode desviar desse ataque,
-mas n√£o pode se defender. Medrash pode fugir da investida, permanecendo
-longe da trajet√≥ria de Balasar. Nesse caso, Balasar n√£o realizar√° o ataque.
-Depois da investida, bem sucedida ou n√£o, Balasar se afastar√°.
-Ao se afastar o suficiente, Balasar voltar√° a preparar o ataque.
+O Balasar j· inicia na batalha. Inicialmente ele prepara o ataque.
+ApÛs alguns segundos, ele investe em direÁ„o ‡ Medrash. Seu movimento
+È essencialmente retilÌneo. Durante o movimento, sua rotaÁ„o È limitada.
+Se Balasar chegar a uma certa dist‚ncia de Medrash durante a investida,
+ele deferir· um ataque contra o mesmo. Medrash pode desviar desse ataque,
+mas n„o pode se defender. Medrash pode fugir da investida, permanecendo
+longe da trajetÛria de Balasar. Nesse caso, Balasar n„o realizar· o ataque.
+Depois da investida, bem sucedida ou n„o, Balasar se afastar·.
+Ao se afastar o suficiente, Balasar voltar· a preparar o ataque.
 
-Ap√≥s uma certa quantidade de ataques, Balasar ir√° prender a clava no
-ch√£o. Nesse momento, Medrash deve ir atacar as estacas que prendem Sora.
-Caso Medrash se aproxime de Balasar, ele ser√° atacado com um chute que
-tamb√©m o afastar√°. Passado um certo per√≠odo de tempo, Balasar solta a
+ApÛs uma certa quantidade de ataques, Balasar ir· prender a clava no
+ch„o. Nesse momento, Medrash deve ir atacar as estacas que prendem Sora.
+Caso Medrash se aproxime de Balasar, ele ser· atacado com um chute que
+tambÈm o afastar·. Passado um certo perÌodo de tempo, Balasar solta a
 clava, e volta a preparar o ataque.
 
-A m√°quina de estados pode ser vista na figura \ref{fsm:balasar_e1}.
+A m·quina de estados pode ser vista na figura \ref{fsm:balasar_e1}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.37]{ia_balasar_e1.png}
- \caption{M√°quina de Estado do Balasar}
+ \caption{M·quina de Estado do Balasar}
  \label{fsm:balasar_e1}
 \end{figure}
 
-O objetivo de Medrash nessa batalha √© libertar Sora, destruindo as 
+O objetivo de Medrash nessa batalha È libertar Sora, destruindo as 
 estacas que a prendem. Quando Medrash destruir as estacas suficientemente,
-Balasar mudar√° seu comportamento, se tornando mais agressivo.
-Nesse novo comportamento, Balasar dar√° ataques triplos, investindo contra
-Medrash a cada ataque. Os outros aspectos do comportamento s√£o semelhantes
+Balasar mudar· seu comportamento, se tornando mais agressivo.
+Nesse novo comportamento, Balasar dar· ataques triplos, investindo contra
+Medrash a cada ataque. Os outros aspectos do comportamento s„o semelhantes
 ao comportamento anterior.
 
-A m√°quina de estados deste novo comportamento pode ser vista na figura
+A m·quina de estados deste novo comportamento pode ser vista na figura
  \ref{fsm:balasar_e2}.
 
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.37]{ia_balasar_e2.png}
- \caption{M√°quina de Estado do Balasar}
+ \caption{M·quina de Estado do Balasar}
  \label{fsm:balasar_e2}
 \end{figure}
