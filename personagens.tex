@@ -30,7 +30,7 @@ são tratadas na subseção a seguir.
 
 \begin{figure}[!ht]
  \centering
- \includegraphics[scale=3]{BarraDeEnergia.png}
+% \includegraphics[scale=3]{BarraDeEnergia.png}
  \caption{Esboço das barras de vida (acima) e energia (abaixo).}
  \label{img:energia}
 \end{figure}
@@ -49,7 +49,7 @@ mais correr e nem pular, apenas andar.
 
 \begin{figure}[!ht]
  \centering
- \includegraphics[scale=2.5]{VelocidadeDeDeslocamentoEPulo.png}
+% \includegraphics[scale=2.5]{VelocidadeDeDeslocamentoEPulo.png}
  \caption{Relação entre a capacidade de esforço físico e a energia do personagem.}
  \label{img:velocidade}
 \end{figure}
@@ -73,7 +73,7 @@ terá suas características específicas. Estas são apresentadas na Tabela 1, e
 
 \begin{figure}[!ht]
  \centering
- \includegraphics[scale=1]{tabela.png}
+% \includegraphics[scale=1]{tabela.png}
  \caption{}
  \label{img:tabela}
 \end{figure}
@@ -100,7 +100,7 @@ O Modelo base de Medrash está mostrado na figura \ref{img:medrash}
 
 \begin{figure}[!ht]
  \centering
- \includegraphics[scale=0.5]{Imagens/medrash01.png}
+% \includegraphics[scale=0.5]{Imagens/medrash01.png}
  \caption{Medrash}
  \label{img:medrash}
 \end{figure}
@@ -212,9 +212,27 @@ Como mencionado, a cobra é um dos menores inimigos de Medrash. Medindo
  único ataque, a mordida. A tabela 1 apresenta as principais
  características da cobra, onde K é um valor constante e p.p. é a
  abreviação para pontos percentuais.
-
-TABELA
-
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Característica} & \textbf{Valor} \\ 
+\hline 
+Raio de detecção do personagem principal & K \\ 
+\hline 
+Raio de perda detecção do personagem principal & 1,5K \\ 
+\hline 
+Valor energético para o personagem principal & +30 p.p. \\ 
+\hline 
+Número de golpes para morrer & 3 \\ 
+\hline 
+Forma de ataque & Mordida \\ 
+\hline 
+Tipo de dano & Contusão \\ 
+\hline 
+Valor do dano & -5 p.p. \\ 
+\hline 
+\end{tabular} 
+\end{center}
 \item {\bf Concepção Artística}
 O modelo da cobra está mostrado abaixo:
 
@@ -238,7 +256,27 @@ O urso é o maior inimigo de Medrash e está presente somente na primeira
 O urso pesa aproximadamente 400 Kg, tendo até 4 m de altura quando em
  posição bípede. Ele é muito robusto e apresenta pelagem marrom.
 
-TABELA
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Característica} & \textbf{Valor} \\ 
+\hline 
+Raio de detecção do personagem principal & 2K \\ 
+\hline 
+Raio de perda detecção do personagem principal & 6K \\ 
+\hline 
+Valor energético para o personagem principal & +90 p.p. \\ 
+\hline 
+Número de golpes para morrer & 9 \\ 
+\hline 
+Forma de ataque & Mordida \\ 
+\hline 
+Tipo de dano & Contusão \\ 
+\hline 
+Valor do dano & -15 p.p. \\ 
+\hline 
+\end{tabular} 
+\end{center}
 
 \item {\bf Concepção Artística}
 O modelo definido para o urso está mostrado na Figura \ref{img:urso}.
@@ -269,6 +307,28 @@ O jacaré também possui aparência realista, com cerca de 2m de comprimento e
  pesando 80 Kg. Possui dentes afiados e maior agilidade dentro da água.
  Fora dela se torna muito mais lento, porém possui o mesmo poder de ataque.
  A tabela 2 descreve as principais características do jacaré.
+ 
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Característica} & \textbf{Valor} \\ 
+\hline 
+Raio de detecção do personagem principal & 0,5K \\ 
+\hline 
+Raio de perda detecção do personagem principal & 6K \\ 
+\hline 
+Valor energético para o personagem principal & +60 p.p. \\ 
+\hline 
+Número de golpes para morrer & 6 \\ 
+\hline 
+Forma de ataque & Mordida \\ 
+\hline 
+Tipo de dano & Cortante/Contusão \\ 
+\hline 
+Valor do dano & -10 p.p. \\ 
+\hline 
+\end{tabular} 
+\end{center}
 
 \item {\bf Concepção Artística}
 Ainda não foi definido um modelo específico que representará o jacaré,
@@ -284,3 +344,228 @@ Animações que o jacaré deverá ter:
 \item Abocanhar/Morder;
 \end{itemize}
 \end{itemize}
+\subsubsection{Lobo}
+O Lobo está presente na segunda fase do jogo, enquanto este está cortando caminho pelas montanhas para chegar à tribo Akanul. O Lobo foge de Medrash sempre que este está com a tocha acesa. Quando ela apaga, ele o persegue por todo o cenário até que Medrash acenda a tocha novamente
+\begin{itemize}
+\item {\bf Descrição Física}
+O Lobo apresenta uma altura de aproximadamente 75 centímetros, se medido a partir do ombro, pesando cerca de 30 Kg.
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Característica} & \textbf{Valor} \\ 
+\hline 
+Raio de detecção do personagem principal & 0,5K \\ 
+\hline 
+Raio de perda detecção do personagem principal & 6K \\ 
+\hline 
+Valor energético para o personagem principal & +30 p.p. \\ 
+\hline 
+Número de golpes para morrer & 3 \\ 
+\hline 
+Forma de ataque & Mordida \\ 
+\hline 
+Tipo de dano & Cortante \\ 
+\hline 
+Valor do dano & -10 p.p. \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{itemize}
+\begin{itemize}
+\item {\bf Concepçao artística}
+
+IMAGEM DO LOBO
+
+As animações que o lobo deverá ter:
+\begin{itemize}
+\item {Andar;}
+\item {Correr;}
+\item {Uivar;}
+\item {Morder;}
+
+\end{itemize}
+
+\end{itemize}
+\subsubsection{Enxame de abelhas}
+Presente na primeira fase do jogo, na área do Urso, o enxame de abelhas vive tranquilamente, até Medrash se aproximar demais. As abelhas não são fortes, mas se Medrash não fugir rapidamente elas podem ser um problema.
+\begin{itemize}
+\item {\bf Descrição física}
+A colméia das abelhas é de aproximadamente 40 cm, com uma aparência simples. As colméias apresentam cerca de 400 a 500 abelhas.
+
+As abelhas são pequenas, com aproximadamente 1 cm. 
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Característica} & \textbf{Valor} \\ 
+\hline 
+Raio de detecção do personagem principal & 0,25K \\ 
+\hline 
+Raio de perda detecção do personagem principal & 3K \\ 
+\hline 
+Valor energético para o personagem principal & Não convém\\ 
+\hline 
+Número de golpes para morrer & Não convém \\ 
+\hline 
+Forma de ataque & Picada \\ 
+\hline 
+Tipo de dano & Contusão \\ 
+\hline 
+Valor do dano & -1 p.p. \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{itemize}
+\begin{itemize}
+
+\item {\bf Concepção artística}
+O modelo de colméia será baseado nas imagens abaixo.
+ 
+ IMAGEM DA COLMÉIA
+\end{itemize}
+\subsection{Tigre}
+É o "chefe" da primeira fase, portanto o maior desafio para Medrash nesta etapa. Possui maior poder de ataque e é mais difícil de ser abatido.
+
+
+O Tigre impede que Medrash avance para próxima tribo (segunda fase), portanto, o jogador só poderá prosseguir caso derrote o Tigre. Medrash poderá usar a lança ou o porrete para derrotá-lo, sendo que com a lança os ataques são mais eficientes. O tigre possui um ataque mais poderoso, tirando mais pontos de vida de Medrash. O tigre desfere ataques em forma de mordida e saltando sobre Medrash.
+\begin{itemize}
+\item {\bf Descrição física}
+O tigre possui tamanho e aparência de um tigre real, com cerca de 1,2 m de altura e 3 m de comprimento (incluindo a cauda), pesando 300 Kg.
+
+A tabela X traz as principais características do tigre.
+\end{itemize}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Característica} & \textbf{Valor} \\ 
+\hline 
+Raio de detecção do personagem principal & Não convém \\ 
+\hline 
+Raio de perda detecção do personagem principal & Não convém \\ 
+\hline 
+Valor energético para o personagem principal & Não convém \\ 
+\hline 
+Número de golpes para morrer & 10 com a lança e 30 com o porrete \\ 
+\hline 
+Forma de ataque & Mordida/Patada\\ 
+\hline 
+Tipo de dano &  Contusão/Cortante \\ 
+\hline 
+Valor do dano & -15 p.p. \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\begin{itemize}
+\item {\bf Concepçao artística}
+
+A figura abaixo demonstra o modelo do tigre.
+
+IMAGEM DO TIGRE
+
+\begin{itemize}
+\item {Andar;}
+\item {Correr;}
+\item {Posição para o ataque;}
+\item {Ataque com salto;}
+\item {Morder;}
+\end{itemize}
+\end{itemize}
+\subsubsection{Balazar}
+Balasar é o arqui-inimigo de Medrash. É o líder da tribo Luskan e tem como determinação destruir todas as outras tribos do mundo para se tornar líder absoluto de tudo. Balasar sequestra Sora e escraviza todos os outros.
+\begin{itemize}
+\item {\bf Descrição física}
+Balazar é um personagem gordo, 1.65m de altura com 150 Kg.
+\end{itemize}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Característica} & \textbf{Valor} \\ 
+\hline 
+Raio de detecção do personagem principal & Não convém \\ 
+\hline 
+Raio de perda detecção do personagem principal & Não convém \\ 
+\hline 
+Valor energético para o personagem principal & Não convém \\ 
+\hline 
+Número de golpes para morrer & 15 com machado\\ 
+\hline 
+Forma de ataque & Ataque com porrete\\ 
+\hline 
+Tipo de dano &  Contusão/Cortante \\ 
+\hline 
+Valor do dano & -10 p.p. \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\begin{itemize}
+\item{\bf Concepção artística} O modelo que representará Balazar é apresentado abaixo.
+
+IMAGEM DO BALAZAR
+
+Balazar deverá ter as seguintes animações: 
+\begin{itemize}
+\item {Atacar;}
+\item {Atordoado;}
+\item {Correr;}
+\item {Cair;}
+\end{itemize}
+\end{itemize}
+\subsubsection{Guerreiros inimigos da tribo Luskan}
+Representam os humanos inimigos de Medrash. Dentre todos os inimigos da tribo Luskan, esses guerreiros são os mais fracos. Os guerreiros de Luskan aparecem no jogo a partir da parte dois da segunda fase, durante um ataque da tribo a tribo Mara-Kai. Nesse ataque participarão dois tipos de guerreiros da tribo Luskan, um que irá atear fogo na morada defendida por Medrash, e outro que encontrará em combate direto com nosso herói.
+
+\begin{itemize}
+\item{\bf Descrição física}
+Esses guerreiros são os mais fracos da tribo Luskan. Com aproximadamente 1, 70m e pesando cerca de 70kg, possuem fisionomia muito parecida com a de Medrash. Seus ataques são baseados basicamente em luta corporal, mas podem também portar pequenas armas, porém, nada que se compare aos guerreiros mais fortes da tribo Luskan.
+\end{itemize}
+
+A tabela X descreve as características básicas desses guerreiros.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Característica} & \textbf{Valor} \\ 
+\hline 
+Número de golpes para morrer & 3\\ 
+\hline 
+Forma de ataque & Corporal\\ 
+\hline 
+Tipo de dano &  Contusão \\ 
+\hline 
+Valor do dano & -10 p.p. \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\begin{itemize}
+\item{\bf Concepção artística}
+O modelo que representará os guerreiros de Luskan é basicamente um humano com adaptações de vestimenta e armamento para se adaptar ao período do jogo.
+
+Possivelmente será utilizado o mesmo modelo para essa classe de guerreiros, com algumas diferenciações apenas na forma física e/ou maneira de se vestir.
+
+As figuras abaixo servirão de inspiração para a concepção do modelos de guerreiro.
+ 
+ FIGURAS DOS INIMIGOS guerreiro001 e guerreiro002
+
+\end{itemize}
+\subsubsection{Escravos}
+Os escravos representam os habitantes das tribos Ari e Mara-kai que foram capturados pelos guerreiros da tribo Luskan. Os escravos estarão presentes na terceira fase do jogo, onde ficarão presos por estacas flamejantes. Serão divididos em três grupos. Nessa etapa Medrash deverá derrotar os inimigos da tribo Luskan para poder libertar os respectivos escravos. Tendo derrotado todos os guerreiros inimigos, Medrash poderá destruir as estacas que guardam os escravos, terminando, todos os escravos estarão livres.
+
+\begin{itemize}
+\item{\bf Descrição física}
+Os escravos são humanos com a mesma aparência dos demais habitantes de sua tribo. Porém, devido ao aprisionamento, encontram-se visivelmente mais magros e debilitados.
+\end{itemize}
+\begin{itemize}
+\item{\bf Concepção artística}
+Como mencionado, os escravos serão modelos normais de humanos. Possivelmente sendo variações do modelo que representará os guerreiros inimigos, ou Medrash.
+
+
+As imagens abaixo serão utilizadas como referência para a criação dos modelos.
+
+IMAGEM mulher01 e escravo 01.
+
+\end{itemize}
+\subsubsection{Porrete 2}
+O porrete é a arma principal de Balazar. Esta arma apresenta um grande poder de destruição contra Medrash.
+
+Abaixo é apresentada a arma de Balazar.
+
+
+IMAGEM porrete2
