@@ -1,103 +1,84 @@
 \section{Mecânica do Jogo}
 
+Nesta sessão serão descritas as regras de interação entre o jogador e o jogo.
 
-Nesta sessão estão descritas as regras de interação entre o jogador e o jogo.
-
-\subsection {Mecânica Basica}
+\subsection {Mecânica Básica}
 
 O jogador irá passar por mapas do jogo tendo a liberdade de se deslocar em
- qualquer direção até que encontre um \textit{checkpoint} que estará em uma região
- do mapa que não permite a volta do personagem a área anterior.
+ qualquer direção dentro da área permitida.
 
 \subsubsection {Controles}
 
 O jogador poderá movimentar o personagem pelo cenário por meio das setas
  direcionais. Para as demais interações serão utilizadas as teclas
- ``A'', ``S'', ``D'' e a barra de espaço.
+ ``A'', ``S'', ``D'' e a barra de espaço:
 \begin{itemize}
 \item {\bf ``A'' é o botão de ataque} O personagem utiliza a arma disponível
-para atacar o inimigo mais próximo.
+para atacar o inimigo mais próximo;
 \item {\bf ``S'' é o botão de ação} O personagem realiza a interação com o
- cenário e outros personagens.
+ cenário e outros personagens;
 \item {\bf ``D'' é o botão de defesa} Quando não for possível sair da frente
- de um ataque a tecla ``D'' pode ser usada para se defender.
+ de um ataque, a tecla ``D'' pode ser usada para se defender;
 \item {\bf A barra de espaço é o botão de pulo} O personagem pula.
 \end{itemize}
 
 \subsubsection {Deslocamento}
-
-Na primeira fase o personagem principal se desloca inicialmente correndo. Conforme este 
-perde energia passa a correr mais devagar até que atinja um nível crítico
-onde o personagem passa apenas a andar.
-
-Nas demais fases o personagem tem apenas a opção de correr.
+Na primeira fase o personagem principal se desloca inicialmente correndo. 
+Conforme este perde energia, passa a correr mais devagar até que atinja um 
+nível crítico onde passa apenas a andar. Nas demais, não haverá indicador 
+de canseira.
 
 \subsubsection {Inimigos e Desafios}
+Nos mapas irão existir diversos inimigos que podem detectar o jogador caso 
+este chegue muito próximo. Sendo verdade, eles iniciam uma perseguição. Assim 
+que o jogador se afasta a uma determinada distância, os inimigos voltam ao 
+seu estado inicial. 
 
-Nos mapas vão existir diversos inimigos que podem detectar o jogador se 
-este chegar muito próximo 
-e então dão inicio a uma perseguição, assim que o jogador se afasta a 
-uma determinada distância esses voltam ao seu estado inicial. 
-
-Estes inimigos quando próximos do jogador irão ataca-lo possibilitando que o 
-jogador também faça o mesmo. 
-Adicionalmente no final de cada mapa haverá um desafio extra como um inimigo
+Os inimigos quando próximos do jogador irão atacá-lo, possibilitando que o 
+personagem também faça o mesmo. 
+Adicionalmente, no final de cada mapa haverá um desafio extra, como um inimigo
  mais forte ou uma batalha.  
 
 \subsubsection {Interação com o Cenário}
 
-Além dos inimigos o personagem principal poderá interagir com partes do
- cenário e outros personagens para completar os
-desafios propostos.
+Além dos inimigos, o personagem principal poderá interagir com partes do
+ cenário e NPCs para completar os desafios propostos.
 
 \subsection {Combate}
 \subsubsection{Inimigos}
-Ao se aproximar dos inimigos, estes irão atacar o personagem principal. O
- personagem principal pode então pressionar a tecla ``A'' para atacar o
- inimigo mais próximo.
+Ao se aproximar dos inimigos, estes irão atacar o personagem principal. A
+tecla ``A'' pode então ser pressionada para atacar o mais próximo.
 
-Os ataques dos inimigos serão periódicos podendo ser defendidos utilizando a
- tecla ``D'', que irá reduzir o dano causado, ou podem ser esquivados
- utilizando as 
-setas direcionais para sair da região de efeito do ataque.
-
-\subsubsection {Armas}
-O personagem principal começa armado com um porrete de madeira. Durante a
- primeira fase este pode pegar uma lança que irá facilitar no combate com o
- tigre. 
-
-Na segunda fase haverá um bastão em chamas que, entre outros usos, espanta
- os animais que estão próximos.
+Os ataques dos inimigos serão periódicos, podendo ser defendidos utilizando a
+ tecla ``D'', que irá reduzir o dano causado. Também podem ser esquivados
+ utilizando as setas direcionais para sair da região de efeito do ataque.
 
 \subsection {Dificuldade}
-
-O jogo apresentará duas classes de dificuldades ao personagem principal (ou jogador): de percurso e de
-inimigos. As dificuldades de percurso serão aquelas apresentadas pelo ambiente e que exigirá a habilidade
-de locomoção do personagem, tal como salto ou desvio de obstáculos. As dificuldades de inimigos serão
+O jogo apresentará duas classes de dificuldades ao personagem principal: de percurso e de
+inimigos. As dificuldades de percurso serão aquelas apresentadas pelo ambiente e que exigirão a habilidade
+de locomoção do personagem, tais como salto ou desvio de obstáculos. As dificuldades de inimigos serão
 aquelas que exigirão a habilidade de ataque e defesa do personagem quando em confronto com um inimigo.
 
-De uma fase para outra são introduzidas novas mecânicas de jogo (ver capitulo 4) aumentando o
+De uma fase para outra serão introduzidas novas mecânicas de jogo aumentando o
 grau de dificuldade e criando um incentivo para que o jogador não perca o interesse pelo jogo.
 
 \subsection {Vida, Energia e Temperatura}
 
-Existem três barras principais durante o jogo, as barras de vida, energia e temperatura. 
+Existem três barras principais durante o jogo: as barras de vida, energia e temperatura. 
 
-A barra de vida indica a saúde do personagem, esta barra diminui quando
-o personagem sofre ataques dos inimigos e aumenta quando esse derrota os
- inimigos.
+A barra de vida indica a saúde do personagem. Esta barra diminui quando
+o personagem sofre ataques dos inimigos e aumenta quando Medrash come os alimentos
+encontrados.
 
-A barra de energia representa um desafio extra durante a primeira fase, esta
+A barra de energia representa um desafio extra durante a primeira fase. Esta
  barra diminui conforme o deslocamento do personagem e aumenta quando o 
-mesmo cumpre alguns objetivos na fase como matar animais.
+mesmo cumpre algumas necessidades, tais como comer.
 
 A barra de temperatura existe apenas na segunda fase e serve para mostrar que
-o personagem está perdendo temperatura corporal e está aumenta quando o personagem está perto do fogo.
+o personagem está perdendo temperatura corporal. Esta barra aumenta quando o 
+personagem aproxima-se do fogo.
 
 \subsection {Salvar e Carregar o jogo}
-Para salvar o progresso no jogo será utilizado um sitema de perfil. Inicialmente o jogador criará um perfil e este dará acesso 
-a primeira fase, quando o jogador passar pela primeira fase este perfil dará acesso a segunda fase e será registrado com qual arma o jogador
-finalizou a primeira etapa. Ao passar pela segunda fase o jogador então terá acesso à terceira fase no perfil. O jogo apenas salva o progresso 
-no inicio de cada fase.
+Para salvar o progresso no jogo será utilizado um sistema de perfil. Inicialmente o jogador criará um perfil e este dará acesso à primeira fase. Após a conclusão das fases, as posteriores serão devidamente liberadas, com a opção de salvar o progresso obtido liberada. Somente é possível salvar um jogo no início de uma nova fase.
 
-Será possivel criar diversos perfis. Na tela inicial do jogo haverá uma opção de carregar o jogo e está listará todos os perfis existentes.
+Será possível criar diversos perfis. Na tela inicial do jogo haverá uma opção de carregar o perfil e esta irá conter todos os existentes.
