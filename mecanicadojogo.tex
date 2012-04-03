@@ -1,17 +1,17 @@
 \section{Mecânica do Jogo}
 
 
-Nesta sessão descreveremos as regras de interação entre o jogador e o jogo.
+Nesta sessão estão descritas as regras de interação entre o jogador e o jogo.
 
 \subsection {Mecânica Basica}
 
-O jogador irá passar por mapas do jogo tendo a liberdade de andar em
- qualquer direção até que encontre um checkpoint que estará em uma região
+O jogador irá passar por mapas do jogo tendo a liberdade de se deslocar em
+ qualquer direção até que encontre um \textit{checkpoint} que estará em uma região
  do mapa que não permite a volta do personagem a área anterior.
 
 \subsubsection {Controles}
 
-O jogador pode movimentar o personagem pelo cenário através das setas
+O jogador poderá movimentar o personagem pelo cenário por meio das setas
  direcionais. Para as demais interações serão utilizadas as teclas
  ``A'', ``S'', ``D'' e a barra de espaço.
 \begin{itemize}
@@ -26,9 +26,11 @@ para atacar o inimigo mais próximo.
 
 \subsubsection {Deslocamento}
 
-O personagem principal se desloca inicialmente correndo. Conforme este 
+Na primeira fase o personagem principal se desloca inicialmente correndo. Conforme este 
 perde energia passa a correr mais devagar até que atinja um nível crítico
-onde o personagem passa a andar apenas
+onde o personagem passa apenas a andar.
+
+Nas demais fases o personagem tem apenas a opção de correr.
 
 \subsubsection {Inimigos e Desafios}
 
@@ -69,24 +71,28 @@ Na segunda fase haverá um bastão em chamas que, entre outros usos, espanta
 
 \subsection {Dificuldade}
 
-O jogo tem apenas um modo de dificuldade. Os desafios propostos aumentam de
- dificuldade conforme a progressão dentro de cada fase.
+O jogo apresentará duas classes de dificuldades ao personagem principal (ou jogador): de percurso e de
+inimigos. As dificuldades de percurso serão aquelas apresentadas pelo ambiente e que exigirá a habilidade
+de locomoção do personagem, tal como salto ou desvio de obstáculos. As dificuldades de inimigos serão
+aquelas que exigirão a habilidade de ataque e defesa do personagem quando em confronto com um inimigo.
 
-De uma fase para outra são introduzidas novas mecânicas de jogo aumentando o
- grau de dificuldade e criando um incentivo para que o jogador 
-não perca o interesse pelo jogo.
+De uma fase para outra são introduzidas novas mecânicas de jogo (ver capitulo 4) aumentando o
+grau de dificuldade e criando um incentivo para que o jogador não perca o interesse pelo jogo.
 
-\subsection {Vide e Energia}
+\subsection {Vida, Energia e Temperatura}
 
-Existem duas barras principais durante o jogo, as barras de vida e energia. 
+Existem três barras principais durante o jogo, as barras de vida, energia e temperatura. 
 
 A barra de vida indica a saúde do personagem, esta barra diminui quando
 o personagem sofre ataques dos inimigos e aumenta quando esse derrota os
  inimigos.
 
-A barra de energia representa um desafio extra que depende da fase, esta
+A barra de energia representa um desafio extra durante a primeira fase, esta
  barra diminui conforme o deslocamento do personagem e aumenta quando o 
-mesmo cumpre alguns objetivos na fase.
+mesmo cumpre alguns objetivos na fase como matar animais.
+
+A barra de temperatura existe apenas na segunda fase e serve para mostrar que
+o personagem está perdendo temperatura corporal e está aumenta quando o personagem está perto do fogo.
 
 \subsection {Salvar e Carregar o jogo}
 Para salvar o progresso no jogo será utilizado um sitema de perfil. Inicialmente o jogador criará um perfil e este dará acesso 
