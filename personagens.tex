@@ -12,39 +12,39 @@ Nas seções a seguir são apresentadas as formas de controle dos estados
 do personagem principal, os inimigos e suas respectivas características 
 e, por fim, o cenário e seus desafios.
 
-\subsection{Estados do Personagem Principal}
+\subsection{Estados do personagem principal}
 Na primeira fase do jogo, haverá duas barras para que o jogador possa 
-controlar os estados do per-sonagem principal, ou seja, a condição física 
+controlar os estados do personagem principal, ou seja, a condição física 
 dele: a barra de vida e a barra de energia.
  
 \subsubsection{Barra de Vida}
 A barra de vida exibe o nível de vitalidade do personagem principal. 
-A Figura 1 apresenta um esboço desta barra, que começa completa, com
+A \ref{img:energia} apresenta um esboço desta barra, que começa completa, com
 100 pontos percentuais. São dois os fatores que influenciarão no 
 decaimento do nível: ataques sofridos e barra de energia vazia. Os ataques 
-sofridos condizem com os ata-ques dos animais que o personagem encontrará
-nos cenários da primeira fase. O valor que será decremen-tado da barra de 
-vida dependerá da força de ataque do animal em específico. Sobre a barra de 
-energia vazia e a forma de recuperação da força vital do personagem, estas
-são tratadas na subseção a seguir.
+sofridos condizem com os ataques dos animais e inimigos que o personagem encontrará
+nos cenários. O valor que será decrementado da barra de 
+vida dependerá da força de ataque recebido, que varia de acordo com o oponente. 
+Sobre a barra de energia vazia e a forma de recuperação da força vital do personagem, 
+estas são tratadas na subseção a seguir.
 
 \begin{figure}[H]
  \centering
- \includegraphics[scale=3]{BarraDeEnergia.png}
+ \includegraphics[scale=0.3]{BarraDeEnergia.png}
  \caption{Esboço das barras de vida (acima) e energia (abaixo).}
  \label{img:energia}
 \end{figure}
 
 \subsubsection{Barra de Energia}
 A barra de energia exibe o nível de resistência física do personagem principal, 
-ou seja, a capacidade dele para desenvolver um esforço físico. A Figura 1 apresenta 
-um esboço desta barra, que inicia cheia. No intervalo de 50 a 100, destacado em 
+ou seja, a capacidade dele para desenvolver um esforço físico. A \ref{img:energia} 
+apresenta um esboço desta barra, que inicia cheia. No intervalo de 50 a 100, destacado em 
 verde, o personagem estará em pleno vigor físico. Ele conseguirá correr e pular 
 alto ou longas distâncias. No intervalo de 20 a 50, destacado em amarelo, o 
 personagem começará a sofrer um desgaste físico. Ele passará a correr cada vez 
 mais lento e a saltar alturas e distâncias cada vez menores até chegar à exaustão 
-física – a função para controle da capacidade de esforço físico do persona-gem é 
-apresentada no Gráfico 1. No intervalo de 0 a 20, o personagem já não conseguirá 
+física - a função para controle da capacidade de esforço físico do personagem é 
+apresentada na \ref{img:velocidade}. No intervalo de 0 a 20, o personagem já não conseguirá 
 mais correr e nem pular, apenas andar.
 
 \begin{figure}[H]
@@ -69,19 +69,19 @@ animal tem o seu valor energético específico.
 \subsection{Personagens}
 Na primeira fase, os inimigos do personagem principal serão os animais da floresta. 
 Haverá cinco espécies de animais: cobra, urso, abelha, jacaré e tigre. Cada espécie 
-terá suas características específicas. Estas são apresentadas na Tabela 1, em que K 
+terá suas características específicas. Estas são apresentadas na \ref{img:tabela}, em que K 
 é um valor constante e p.p. é a abreviação de pontos percentuais.
 
 \begin{figure}[H]
  \centering
  \includegraphics[scale=1]{tabela.png}
- \caption{}
+ \caption{Características dos animais selvagens}
  \label{img:tabela}
 \end{figure}
 
 \subsection{Personagem principal}
 \subsubsection{Descrição física e psicológica}
-Medrash é o personagem principal, o qual será controlado pelo jogador. Ele
+Medrash é o personagem principal, que será controlado pelo jogador. Ele
  possui cerca de 20 anos de idade, 1,65 m de altura e 70 Kg. Com um corpo
  magro, mas com músculos definidos, é muito forte, sendo tipicamente um
  caçador.
@@ -97,7 +97,7 @@ Medrash enfrenta diferentes inimigos ao longo do jogo. É corajoso,
  de enfrentar a poderosa tribo Luskan.
 
 \subsubsection{Concepção artística}
-O Modelo base de Medrash está mostrado na figura \ref{img:medrash}
+O Modelo base de Medrash é mostrado na figura \ref{img:medrash}
 
 \begin{figure}[H]
  \centering
@@ -156,16 +156,16 @@ O conceito artístico do machado pode ser encontrado na figura
 
 \end{itemize}
 
-\subsection{Personagens Secundários}
+\subsection{Personagens secundários}
 \subsubsection{Sora}
-Sora é mulher de Medrash, vivendo pacificamente na tribo Ari. Sequestrada
+Sora é mulher de Medrash, que vive pacificamente na tribo Ari. Sequestrada
  por Balazar para ser escravizada, precisa da ajuda de Medrash para poder
  ser livre novamente.
 \begin{itemize}
 \item {\bf Descrição física}
 Com aproximadamente 18 anos, com 1.55 m de altura e 50 Kg, 
 \item {\bf Concepção artística}
-O modelo de Sora está demonstrado na figura \ref{img:sora}.
+O modelo de Sora é demonstrado na figura \ref{img:sora}.
 
 \begin{figure}[H]
  \centering
@@ -208,7 +208,7 @@ O modelo que servirá como base para a criação de Gardain é apresentado na
 \end{itemize}
 \subsubsection{Rangrim}
 Rangrim é o líder da tribo dos Mara-kai. Ao chegar na tribo, Medrash
- encontra-o ferido após ataque da tribo Luskan. Rangrim informa Medrash de
+ encontra-o ferido após o ataque da tribo Luskan. Rangrim informa Medrash de
  que os Luskan pretendem atacar a tribo aliada Akanul, a maior e mais
  importante da região. Experiente e sábio, Rangrim conhece bem os caminhos
  e perigos da região, e indica a Medrash um atalho através das montanhas
@@ -233,7 +233,7 @@ O ancião apresentado na Figura \ref{img:rangrim} será utilizado para a criaç�
 
 \subsection{Inimigos}
 \subsubsection{Cobra}
-Não é um inimigo direito de Medrash, só ataca quando se sente ameaçada. A
+Não é um inimigo direto de Medrash, só ataca quando se sente ameaçada. A
  cobra é a segunda menor criatura do jogo atrás apenas da abelha. Ela
  patrulha uma determinada área rastejando e, caso o personagem principal se
  aproxime, esta fica enrolada em posição de ataque efetuando bote em forma
@@ -255,7 +255,7 @@ Como mencionado, a cobra é um dos menores inimigos de Medrash. Medindo
 \hline 
 Raio de detecção do personagem principal & K \\ 
 \hline 
-Raio de perda detecção do personagem principal & 1,5K \\ 
+Raio de perda de detecção do personagem principal & 1,5K \\ 
 \hline 
 Valor energético para o personagem principal & +30 p.p. \\ 
 \hline 
@@ -273,7 +273,7 @@ Valor do dano & -5 p.p. \\
 \label{table:cobra}
 \end{table}
 \item {\bf Concepção Artística}
-O modelo da cobra está mostrado abaixo:
+O modelo da cobra é mostrado abaixo:
 
 
 \begin{figure}[H]
@@ -311,7 +311,7 @@ O urso pesa aproximadamente 400 Kg, tendo até 4 m de altura quando em
 \hline 
 Raio de detecção do personagem principal & 2K \\ 
 \hline 
-Raio de perda detecção do personagem principal & 6K \\ 
+Raio de perda de detecção do personagem principal & 6K \\ 
 \hline 
 Valor energético para o personagem principal & +90 p.p. \\ 
 \hline 
@@ -330,7 +330,7 @@ Valor do dano & -15 p.p. \\
 
 
 \item {\bf Concepção Artística}
-O modelo definido para o urso está mostrado na Figura \ref{img:urso}.
+O modelo definido para o urso é mostrado na Figura \ref{img:urso}.
 
 \begin{figure}[H]
  \centering
@@ -350,8 +350,8 @@ As animações que o urso deverá ter são:
 
 \subsubsection{Jacaré}
 O jacaré é um inimigo natural também encontrado na primeira fase do jogo.
- Vive ao redor de um rio, o qual Medrash é obrigado a atravessar para ir de
- um cenário à outro. O jacaré basicamente fica parado à margem do rio, e/ou
+ Vive dentro e ao redor de um rio, o qual Medrash é obrigado a atravessar para ir de
+ um lado do cenário à outro. O jacaré basicamente fica parado à margem do rio, e/ou
  nadando nele. Da mesma forma que a cobra, o jacaré só ataca se Medrash
  chegar muito próximo dele, nesse caso ele começa a persegui-lo tanto
  dentro como fora d'água. Se Medrash estiver muito perto do jacaré, este
@@ -372,7 +372,7 @@ O jacaré também possui aparência realista, com cerca de 2m de comprimento e
 \hline 
 Raio de detecção do personagem principal & 0,5K \\ 
 \hline 
-Raio de perda detecção do personagem principal & 6K \\ 
+Raio de perda de detecção do personagem principal & 6K \\ 
 \hline 
 Valor energético para o personagem principal & +60 p.p. \\ 
 \hline 
@@ -410,7 +410,7 @@ Animações que o jacaré deverá ter:
 \end{itemize}
 \end{itemize}
 \subsubsection{Lobo}
-O Lobo está presente na segunda fase do jogo, enquanto este está cortando caminho pelas montanhas para chegar à tribo Akanul. O Lobo foge de Medrash sempre que este está com a tocha acesa. Quando ela apaga, ele o persegue por todo o cenário até que Medrash acenda a tocha novamente
+O Lobo está presente na segunda fase do jogo, enquanto Medrash está cortando caminho pelas montanhas para chegar à tribo Akanul. O Lobo foge de Medrash sempre que este está com a tocha acesa. Quando ela apaga, ele o persegue por todo o cenário até que Medrash acenda a tocha novamente
 \begin{itemize}
 \item {\bf Descrição Física}
 O Lobo apresenta uma altura de aproximadamente 75 centímetros, se medido a partir do ombro, pesando cerca de 30 Kg.
@@ -422,7 +422,7 @@ O Lobo apresenta uma altura de aproximadamente 75 centímetros, se medido a part
 \hline 
 Raio de detecção do personagem principal & 0,5K \\ 
 \hline 
-Raio de perda detecção do personagem principal & 6K \\ 
+Raio de perda de detecção do personagem principal & 6K \\ 
 \hline 
 Valor energético para o personagem principal & +30 p.p. \\ 
 \hline 
@@ -443,6 +443,7 @@ Valor do dano & -10 p.p. \\
 \begin{itemize}
 \newpage
 \item {\bf Concepçao artística}
+O modelo definido para o lobo é mostrado na \ref{img:lobo}.
 
 \begin{figure}[H]
  \centering
@@ -477,7 +478,7 @@ As abelhas são pequenas, com aproximadamente 1 cm.
 \hline 
 Raio de detecção do personagem principal & 0,25K \\ 
 \hline 
-Raio de perda detecção do personagem principal & 3K \\ 
+Raio de perda de detecção do personagem principal & 3K \\ 
 \hline 
 Valor energético para o personagem principal & Não convém\\ 
 \hline 
@@ -498,7 +499,7 @@ Valor do dano & -1 p.p. \\
 \begin{itemize}
 
 \item {\bf Concepção artística}
-O modelo de colméia será baseado nas imagens abaixo.
+O modelo de colméia será baseado na \ref{img:abelhas}.
 
  \begin{figure}[H]
  \centering
@@ -512,7 +513,7 @@ O modelo de colméia será baseado nas imagens abaixo.
 É o "chefe" da primeira fase, portanto o maior desafio para Medrash nesta etapa. Possui maior poder de ataque e é mais difícil de ser abatido.
 
 
-O Tigre impede que Medrash avance para próxima tribo (segunda fase), portanto, o jogador só poderá prosseguir caso derrote o Tigre. Medrash poderá usar a lança ou o porrete para derrotá-lo, sendo que com a lança os ataques são mais eficientes. O tigre possui um ataque mais poderoso, tirando mais pontos de vida de Medrash. O tigre desfere ataques em forma de mordida e saltando sobre Medrash.
+O Tigre impede que Medrash avance para a próxima tribo (segunda fase), portanto, o jogador só poderá prosseguir caso derrote o Tigre. Medrash poderá usar a lança ou o porrete para derrotá-lo, sendo que com a lança os ataques são mais eficientes. O tigre possui um ataque mais poderoso, tirando mais pontos de vida de Medrash. O tigre desfere ataques em forma de mordida e saltando sobre Medrash.
 \begin{itemize}
 \item {\bf Descrição física}
 O tigre possui tamanho e aparência de um tigre real, com cerca de 1,2 m de altura e 3 m de comprimento (incluindo a cauda), pesando 300 Kg.
@@ -527,7 +528,7 @@ A tabela \ref{table:tigre} traz as principais características do tigre.
 \hline 
 Raio de detecção do personagem principal & Não convém \\ 
 \hline 
-Raio de perda detecção do personagem principal & Não convém \\ 
+Raio de perda de detecção do personagem principal & Não convém \\ 
 \hline 
 Valor energético para o personagem principal & Não convém \\ 
 \hline 
@@ -541,7 +542,7 @@ Valor do dano & -15 p.p. \\
 \hline 
 \end{tabular} 
 \end{center}
-\caption{Características Tigre}
+\caption{Características do Tigre}
 \label{table:tigre}
 \end{table}
 \begin{itemize}
@@ -567,7 +568,7 @@ As animações do tigre são:
 \end{itemize}
 
 \subsubsection{Balazar}
-Balasar é o arqui-inimigo de Medrash. É o líder da tribo Luskan e tem como determinação destruir todas as outras tribos do mundo para se tornar líder absoluto de tudo. Balasar sequestra Sora e escraviza todos os outros.
+Balasar é o arqui-inimigo de Medrash. É o líder da tribo Luskan e tem como determinação destruir todas as outras tribos da região para se tornar líder absoluto. Balasar sequestra Sora e escraviza todos os outros.
 \begin{itemize}
 \item {\bf Descrição física}
 Balazar é um personagem gordo, 1.65m de altura com 150 Kg.
@@ -581,7 +582,7 @@ Balazar é um personagem gordo, 1.65m de altura com 150 Kg.
 \hline 
 Raio de detecção do personagem principal & Não convém \\ 
 \hline 
-Raio de perda detecção do personagem principal & Não convém \\ 
+Raio de perda de detecção do personagem principal & Não convém \\ 
 \hline 
 Valor energético para o personagem principal & Não convém \\ 
 \hline 
@@ -616,7 +617,7 @@ Balazar deverá ter as seguintes animações:
 \end{itemize}
 \end{itemize}
 \subsubsection{Guerreiros inimigos da tribo Luskan}
-Representam os humanos inimigos de Medrash. Dentre todos os inimigos da tribo Luskan, esses guerreiros são os mais fracos. Os guerreiros de Luskan aparecem no jogo a partir da parte dois da segunda fase, durante um ataque da tribo a tribo Mara-Kai. Nesse ataque participarão dois tipos de guerreiros da tribo Luskan, um que irá atear fogo na morada defendida por Medrash, e outro que encontrará em combate direto com nosso herói.
+Representam os humanos inimigos de Medrash. Dentre todos os inimigos da tribo Luskan, esses guerreiros são os mais fracos. Os guerreiros de Luskan aparecem no jogo a partir da parte dois da segunda fase, durante um ataque da tribo a tribo Mara-Kai. Nesse ataque participarão dois tipos de guerreiros da tribo Luskan, um que irá atear fogo na morada defendida por Medrash, e outro que entrará em combate direto com Medrash.
 
 \begin{itemize}
 \item{\bf Descrição física}
@@ -640,16 +641,16 @@ Valor do dano & -10 p.p. \\
 \hline 
 \end{tabular} 
 \end{center}
-\caption{Características dos guerreiros luskans}
+\caption{Características dos guerreiros Luskans}
 \label{table:luskans}
 \end{table}
 \begin{itemize}
 \item{\bf Concepção artística}
-O modelo que representará os guerreiros de Luskan é basicamente um humano com adaptações de vestimenta e armamento para se adaptar ao período do jogo.
+O modelo que representará os guerreiros de Luskan é basicamente igual a de Medrash, com adaptações de vestimenta e armamento para se adaptar ao período do jogo.
 
 Possivelmente será utilizado o mesmo modelo para essa classe de guerreiros, com algumas diferenciações apenas na forma física e/ou maneira de se vestir.
 
-As figuras abaixo servirão de inspiração para a concepção do modelos de guerreiro.
+As figuras abaixo servirão de inspiração para a concepção dos modelos de guerreiros.
 \newpage
  \begin{figure}[H]
  \centering
@@ -663,8 +664,7 @@ As figuras abaixo servirão de inspiração para a concepção do modelos de gue
 \end{itemize}
 
 \subsubsection{Escravos}
-Os escravos representam os habitantes das tribos Ari e Mara-kai que foram capturados pelos guerreiros da tribo Luskan. Os escravos estarão presentes na terceira fase do jogo, onde ficarão presos por estacas flamejantes. Serão divididos em três grupos. Nessa etapa Medrash deverá derrotar os inimigos da tribo Luskan para poder libertar os respectivos escravos. Tendo derrotado todos os guerreiros inimigos, Medrash poderá destruir as estacas que guardam os escravos, terminando, todos os escravos estarão livres.
-
+Os escravos representam os habitantes das tribos Ari e Mara-kai que foram capturados pelos guerreiros da tribo Luskan. Os escravos estarão presentes na terceira fase do jogo, onde ficarão presos por estacas flamejantes. Serão divididos em três grupos. Nessa etapa Medrash deverá derrotar os inimigos da tribo Luskan para poder libertar os respectivos escravos. Tendo derrotado todos os guerreiros inimigos, Medrash poderá destruir as estacas que aprisionam os escravos, libertando-os.
 \begin{itemize}
 \item{\bf Descrição física}
 Os escravos são humanos com a mesma aparência dos demais habitantes de sua tribo. Porém, devido ao aprisionamento, encontram-se visivelmente mais magros e debilitados.
