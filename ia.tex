@@ -12,9 +12,11 @@ ignora a defesa de Medrash.
 Uma vez que Medrash saia se afaste do campo de deteção da cobra, ela
 voltará a patrulhar.
 
+A máquina de estados pode ser vista na figura \ref{fsm:cobra}.
+
 \begin{figure}[!ht]
  \centering
- \includegraphics[scale=0.6]{ia_cobra.png}
+ \includegraphics[scale=0.4]{ia_cobra.png}
  \caption{Máquina de estado da Cobra}
  \label{fsm:cobra}
 \end{figure}
@@ -28,9 +30,11 @@ Quando Medrash se afastar o suficiente da colméia, o enxame deixa
 de perseguí-lo.
 Se o enxame se aproximar de Medrash, irá atacá-lo.
 
+A máquina de estados pode ser vista na figura \ref{fsm:enxame}.
+
 \begin{figure}[!ht]
  \centering
- \includegraphics[scale=0.7]{ia_enxame.png}
+ \includegraphics[scale=0.55]{ia_enxame.png}
  \caption{Máquina de estado do Enxame}
  \label{fsm:enxame}
 \end{figure}
@@ -43,9 +47,11 @@ O jacaré se movimenta dentro e fora do rio. Caso ele fique próximo de
 Medrash, irá atacá-lo. Se sua barra de vida estiver baixa, ele atacará
 múltiplas vezes.
 
+A máquina de estados pode ser vista na figura \ref{fsm:jacare}.
+
 \begin{figure}[!ht]
  \centering
- \includegraphics[scale=0.6]{ia_jacare.png}
+ \includegraphics[scale=0.5]{ia_jacare.png}
  \caption{Máquina de estado do Jacaré}
  \label{fsm:jacare}
 \end{figure}
@@ -57,6 +63,8 @@ do urso, este o perseguirá. Para fugir do urso, Medrash deve ficar a uma
 distância bem maior que o raio de deteção.
 Se o urso se aproximar muito de Medrash, este será atacado. Enquanto estiver
 próximo, o urso, periodicamente, irá se defender.
+
+A máquina de estados pode ser vista na figura \ref{fsm:urso}.
 
 \begin{figure}[!ht]
  \centering
@@ -80,6 +88,8 @@ bote. Ele ficará esperando Medrash se aproximar. Caso Medrash se aproxime,
  ele atacará com um salto. Se Medrash permanecer afastado por tempo 
 suficiente, ele voltará a circular.
 
+A máquina de estados pode ser vista na figura \ref{fsm:tigre}.
+
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.44]{ia_tigre.png}
@@ -101,6 +111,8 @@ Se, enquanto estiver sendo perseguido, Medrash acender a tocha,
 o lobo fugirá. Similarmente, se o lobo estiver fugindo e a tocha se apagar,
 o logo passará a perseguir Medrash.
 
+A máquina de estados pode ser vista na figura \ref{fsm:lobo}.
+
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.5]{ia_lobo.png}
@@ -116,6 +128,8 @@ guerreiro, então o guerreiro empurrará Medrash.
 Se Medrash não estiver muito próximo do piromaníaco, mas estiver dentro
 do raio de ataque do guerreiro, então o guerreiro atacará Medrash.
 
+A máquina de estados pode ser vista na figura \ref{fsm:guerreiro}.
+
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=0.5]{ia_guerreiro.png}
@@ -128,6 +142,8 @@ do raio de ataque do guerreiro, então o guerreiro atacará Medrash.
 O piromaníaco entra no campo de batalha se deslocando ao local mais
 próximo para atear fogo. Seu único objetivo é atear fogo em todos os
 locais possíveis. Caso isso aconteça, o jogador perde o jogo.
+
+A máquina de estados pode ser vista na figura \ref{fsm:piromaniaco}.
 
 \begin{figure}[!ht]
  \centering
@@ -143,6 +159,8 @@ locais possíveis. Caso isso aconteça, o jogador perde o jogo.
 O fanático será instanciado conforme necessário para atacar o Medrash.
 Ele já inicia perseguindo Medrash. Quando fica perto o suficiente, ele
 ataca Medrash. Se Medrash se afastar, ele volta a perseguí-lo.
+
+A máquina de estados pode ser vista na figura \ref{fsm:fanatico}.
 
 \begin{figure}[!ht]
  \centering
@@ -169,6 +187,8 @@ Caso Medrash se aproxime de Balasar, ele será atacado com um chute que
 também o afastará. Passado um certo período de tempo, Balasar solta a
 clava, e volta a preparar o ataque.
 
+A máquina de estados pode ser vista na figura \ref{fsm:balasar_e1}.
+
 \begin{figure}[!ht]
  \centering
  %\includegraphics[scale=0.5]{ia_balasar_e1.png}
@@ -182,6 +202,9 @@ Balasar mudará seu comportamento, se tornando mais agressivo.
 Nesse novo comportamento, Balasar dará ataques triplos, investindo contra
 Medrash a cada ataque. Os outros aspectos do comportamento são semelhantes
 ao comportamento anterior.
+
+A máquina de estados deste novo comportamento pode ser vista na figura
+ \ref{fsm:balasar_e2}.
 
 \begin{figure}[!ht]
  \centering
